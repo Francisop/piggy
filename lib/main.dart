@@ -42,7 +42,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // mainAxisAlignment: MainAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            SizedBox(height: 80),
+            SizedBox(height: 60),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 focusedBorder: InputBorder.none,
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 25),
             Text(
               'Interest Rate Per Annum(%)',
               style: TextStyle(fontSize: 15.5),
@@ -94,7 +94,31 @@ class _MyHomePageState extends State<MyHomePage> {
                 focusedBorder: InputBorder.none,
               ),
             ),
-            SizedBox(height: 30),
+            SizedBox(height: 25),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Text(
+                  'Period:',
+                  style: TextStyle(fontSize: 15.5),
+                ),
+                SizedBox(
+                  width: 100,
+                  child: TextField(
+                    decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Color.fromRGBO(0, 0, 0, 0.07),
+                      focusColor: Colors.grey,
+                      hoverColor: Colors.grey,
+                      hintStyle: TextStyle(color: Colors.white),
+                      enabledBorder: InputBorder.none,
+                      focusedBorder: InputBorder.none,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 25),
             SizedBox(
               width: MediaQuery.of(context).size.width - 40,
               child: ToggleButtons(
